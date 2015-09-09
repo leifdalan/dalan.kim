@@ -1,0 +1,11 @@
+/node_modules
+.DS_Store
+npm-debug.log
+dist
+public
+bower_components
+config/secrets.js
+rev-manifest.json
+aws.js
+data
+secrets.js
