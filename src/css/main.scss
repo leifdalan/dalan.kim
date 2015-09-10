@@ -44,14 +44,17 @@ body, html {
 
 .css-background {
   padding: 5%;
+  background-position: center center;
   background-image: url(/img/background-2400.jpg);
   width: 100%;
   height: 100%;
   background-size: cover;
   @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px) {
+    background-position: top left;
     background-image: url(/img/background-1200.jpg);
   }
   @media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 480px) {
+    background-position: top left;
     background-image: url(/img/background-512.jpg);
   }
   @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 960px) {
@@ -83,16 +86,16 @@ body, html {
 .instagram {
   transition: .2s background-color ease-in;
   width: 30px;
-  background: white;
+  background: rgba(18, 86, 136, 1);
   border-radius: 4px;
   path {
     transition: .2s background-color ease-in;
-    fill: rgba(18, 86, 136, 1);
+    fill: white;
   }
   &:hover {
-    background-color: rgba(18, 86, 136, 1);
+    background-color: white;
     path {
-      fill: white;
+      fill: rgba(18, 86, 136, 1);
     }
   }
 }
