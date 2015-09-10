@@ -1,0 +1,111 @@
+@import "normalize";
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  h1 {
+    font-weight: 300;
+    margin-top: 0;
+    font-size: 8vw;
+    margin-bottom: 12px;
+    @media (max-width: 480px) {
+      font-size: 48px;
+    }
+  }
+  h2 {
+    font-size: 2.5vw;
+    font-weight: 300;
+    @media (max-width: 480px) {
+      font-size: 24px;
+    }
+
+  }
+  .mailto {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin: 10px 0;
+    &:hover {
+      text-decoration: underline;
+    }
+    margin-bottom: 30px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.css-background {
+  padding: 5%;
+  background-image: url(/img/background-2400.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px) {
+    background-image: url(/img/background-1200.jpg);
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 480px) {
+    background-image: url(/img/background-512.jpg);
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 960px) {
+    background-image: url(/img/background-2400.jpg);
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 960px) {
+    background-image: url(/img/background-1200.jpg);
+  }
+}
+
+.linked-in {
+  margin-right: 10px;
+  transition: .2s background-color ease-in;
+  width: 30px;
+  background: rgba(0, 119, 181, 1);
+  border-radius: 4px;
+  &:hover {
+    background: white;
+  }
+  &:hover path {
+    fill: rgba(0, 119, 181, 1);
+  }
+  path {
+    transition: .2s fill ease-in;
+    fill: white;
+  }
+}
+
+.instagram {
+  transition: .2s background-color ease-in;
+  width: 30px;
+  background: white;
+  border-radius: 4px;
+  path {
+    transition: .2s background-color ease-in;
+    fill: rgba(18, 86, 136, 1);
+  }
+  &:hover {
+    background-color: rgba(18, 86, 136, 1);
+    path {
+      fill: white;
+    }
+  }
+}
+
+.background {
+  transition: .2s opacity linear;
+  opacity: 0;
+  height: 100%;
+  display: inline-block;
+  img {
+    width: auto;
+  }
+  &.loaded {
+    opacity: 1;
+  }
+}

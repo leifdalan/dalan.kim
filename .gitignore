@@ -6,6 +6,6 @@ public
 bower_components
 config/secrets.js
 rev-manifest.json
-aws.js
+aws.json
 data
 secrets.js
